@@ -13,8 +13,35 @@
     flex-direction: row;
     padding-top: 10px;
   }
+  .home-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    margin-top: 50px;
+    .h1 {
+      font-size: 60px;
+      text-align: start;
+      letter-spacing: 1px;
+    }
+    h2 {
+      font-size: 50px;
+      letter-spacing: 1px;
+      margin: 5px 0;
+    }
+    span {
+      color: var(--shop-btn);
+      letter-spacing: 1px;
+    }
+    .shop-buttons {
+      height: 40px;
+      width: 150px;
+      font-size: 20px;
+      margin-top: 15px;
+    }
+  }
 }
-
+//pophover-styles
 .pophover-conatienr {
   .card-img {
     max-width: 150px;
@@ -148,5 +175,28 @@
     overflow-y: scroll;
     scroll-behavior: smooth;
     padding: 5px;
+  }
+  .home-container {
+    .home-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: start;
+      margin-top: 40px;
+      .h1 {
+        font-size: 35px;
+        text-align: start;
+        letter-spacing: 1px;
+      }
+      h2 {
+        font-size: 34px;
+        letter-spacing: 1px;
+        margin: 5px 0;
+      }
+      span {
+        color: var(--shop-btn);
+        letter-spacing: 1px;
+      }
+    }
   }
 }

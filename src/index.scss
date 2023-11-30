@@ -28,12 +28,15 @@ img {
   width: 100%;
   display: block;
 }
-
+:root {
+  --shop-btn: #f44336;
+  --white: #ffff;
+}
 body {
   font-family: "DIN Neuzeit Grotesk", sans-serif;
   height: 100%;
   overflow-x: hidden;
-  background-color: #fff !important;
+  background-color: var(--white) !important;
 }
 
 .ant-input-search .ant-input:hover,
@@ -83,35 +86,31 @@ body {
   width: 300px;
   height: 50px;
   font-size: 25px;
+  &:hover {
+    color: #fff !important;
+  }
 }
-.but-btn:hover {
-  background-color: rgb(195, 77, 4);
-  color: #fff !important;
-  width: 300px;
-  height: 50px;
-  font-size: 25px;
-}
+
 .whishlist-btn {
   background-color: rgb(242, 242, 21);
   color: #fff !important;
   height: 50px;
   width: 300px;
   font-size: 25px;
+  &:hover {
+    color: #fff !important;
+  }
 }
-.whishlist-btn:hover {
-  background-color: rgb(215, 215, 2);
-  color: #fff !important;
-  height: 50px;
-  width: 300px;
-  font-size: 25px;
-}
+
 .search-button {
-  background-color: rgb(40, 0, 140);
+  background-color: var(--shop-btn);
   color: #fff;
+  height: 40px;
 }
+
 @media only screen and (max-width: 400px) {
   .but-btn {
-    background-color: rgb(254, 111, 22);
+    background-color: var(--shop-btn);
     color: hsl(0, 0%, 100%) !important;
     width: 100px;
     height: 50px;

@@ -107,6 +107,18 @@ const Home = () => {
                 </Button>
               </div>
             </Popover>
+            <main className="home-text">
+              <div>
+                {" "}
+                <h1 className="h1">
+                  Get up to <span>30%</span> Off{" "}
+                </h1>
+                <h2>
+                  <span>New</span> Arrivals
+                </h2>
+                <Button className="shop-buttons">Shop Now</Button>
+              </div>
+            </main>
           </div>
         )}
       </div>
