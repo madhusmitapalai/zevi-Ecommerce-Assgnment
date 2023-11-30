@@ -160,9 +160,7 @@
   .product-container {
     width: 100%;
     height: 100%;
-    .flex-container {
-      margin-left: -40px;
-    }
+
     .empty-card {
       position: absolute;
       top: 40%;
@@ -214,8 +212,11 @@
     display: block; /* Show on smaller screens */
     cursor: pointer;
   }
+  h3 {
+    margin-left: 25px;
+  }
   .anticon-filter {
-    font-size: 30px;
+    font-size: 20px;
     padding: 0px 5px;
   }
 }
