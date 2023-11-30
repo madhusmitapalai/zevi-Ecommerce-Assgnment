@@ -10,6 +10,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: start;
+    text-align: start;
     gap: 10px;
   }
   .card-img {
@@ -158,6 +160,9 @@
   .product-container {
     width: 100%;
     height: 100%;
+    .flex-container {
+      margin-left: -20px;
+    }
     .empty-card {
       position: absolute;
       top: 40%;
