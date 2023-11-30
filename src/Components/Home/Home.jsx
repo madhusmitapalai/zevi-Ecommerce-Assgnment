@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
-import { Button, Card, Col, Empty, Input, Popover, Row } from "antd";
+import { useNavigate } from "react-router-dom";
+import { Button, Card, Empty, Input, Popover } from "antd";
 import "./Home.scss";
 import { websiteServices } from "../../Services/Website";
 
 const Home = () => {
   const [productList, setProductList] = useState([]);
   const [showHome, setShowHome] = useState(true);
+  // eslint-disable-next-line no-unused-vars
   const [showProducts, setShowProducts] = useState(false);
+  // eslint-disable-next-line no-unused-vars
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [searchQuery, setSearchQuery] = useState("");
   const handleSearch = () => {

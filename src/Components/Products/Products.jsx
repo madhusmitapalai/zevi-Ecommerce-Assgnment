@@ -1,23 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { Navigate, useNavigate, useParams } from "react-router-dom";
-import {
-  HeartFilled,
-  StarFilled,
-  DownOutlined,
-  FilterOutlined,
-} from "@ant-design/icons";
-import {
-  Button,
-  Card,
-  Col,
-  Dropdown,
-  Empty,
-  InputNumber,
-  Menu,
-  Radio,
-  Row,
-  Spin,
-} from "antd";
+import { useNavigate } from "react-router-dom";
+import { HeartFilled, StarFilled, FilterOutlined } from "@ant-design/icons";
+import { Card, Empty, Radio, Spin } from "antd";
 import "./Product.scss";
 import { useLocation } from "react-router-dom";
 import { websiteServices } from "../../Services/Website";
@@ -35,10 +19,10 @@ const Products = () => {
   const navigate = useNavigate();
   useEffect(() => {
     getAllProducts();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [data]);
   const getAllProducts = () => {
     websiteServices.getAllProducts().then((res) => {
-      // console.log("data", res);
       setInitialProducts(res);
       const filteredProducts = res.filter(
         (product) => product.category == data
@@ -49,15 +33,6 @@ const Products = () => {
   };
 
   const [hoveredProduct, setHoveredProduct] = useState(null);
-  const [isHovered, setIsHovered] = useState(false);
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
-
   const filterProductsByPrice = (priceValue) => {
     let filteredByPrice = [];
     switch (priceValue) {

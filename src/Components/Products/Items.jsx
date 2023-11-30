@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { websiteServices } from "../../Services/Website";
-import { useLocation, useParams } from "react-router-dom";
-import { HeartFilled, StarFilled, DownOutlined } from "@ant-design/icons";
+import { useLocation } from "react-router-dom";
+import { StarFilled } from "@ant-design/icons";
 import "./Items.scss";
 import { Button, Spin } from "antd";
 
