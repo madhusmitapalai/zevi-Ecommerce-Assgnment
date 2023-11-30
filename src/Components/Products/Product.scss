@@ -186,6 +186,9 @@
         transform: translateY(0);
       }
     }
+    .ant-card {
+      margin-top: 5px;
+    }
   }
   .filter-container {
     display: none;
@@ -209,10 +212,5 @@
   .anticon-filter {
     font-size: 30px;
     padding: 0px 5px;
-  }
-
-  .flex-container {
-    width: 100%;
-    /* Full width on smaller screens */
   }
 }
