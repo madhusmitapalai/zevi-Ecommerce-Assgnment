@@ -25,7 +25,7 @@ const Products = () => {
     websiteServices.getAllProducts().then((res) => {
       setInitialProducts(res);
       const filteredProducts = res.filter(
-        (product) => product.category == data
+        (product) => product.category === data
       );
       setFilterProducts(filteredProducts);
       setLoading(false);
