@@ -1,0 +1,151 @@
+.home-container {
+  background: url(../../assets/e-commerce-home.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+  height: 100vh;
+
+  .searchar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 10px;
+  }
+}
+
+.pophover-conatienr {
+  .card-img {
+    max-width: 150px;
+    max-height: 200px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ant-card-cover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ant-card {
+    width: 240px;
+    height: 250px;
+  }
+
+  .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .card-text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8px;
+  }
+  .ant-card-body {
+    padding: 0px;
+  }
+  .card-text-1 {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .popular-sugesion-container {
+    margin-top: -20px;
+    margin-left: 20px;
+  }
+  h2 {
+    font-size: 20px;
+    text-decoration: underline;
+  }
+  .cards {
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 240px;
+    border-radius: 5px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &:hover .view-product {
+      display: block;
+      transform: translateY(0);
+    }
+  }
+  p {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  p:hover {
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    transition: 0.5s ease;
+  }
+  .grig-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .home-card {
+    width: 240px;
+  }
+}
+
+//popover style
+.ant-popover .ant-popover-inner {
+  background-color: #ffffff;
+  background-clip: padding-box;
+  border-radius: 5px;
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08),
+    0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+  padding: 0px;
+  width: 1000px;
+  height: 500px;
+  padding: 5px;
+}
+
+.ant-popover .ant-popover-title {
+  min-width: 70px;
+  margin-bottom: 8px;
+  background-color: white;
+  border-bottom: 0.5px solid rgb(206, 206, 206) !important;
+  color: #4a4949;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 5px 5px 0 0;
+}
+
+//input
+.ant-input {
+  max-width: 500px;
+  height: 40px;
+}
+
+@media only screen and (max-width: 400px) {
+  .home-container {
+    height: 100%;
+    width: 100%;
+  }
+  .ant-popover .ant-popover-inner {
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border-radius: 5px;
+    box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08),
+      0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+    padding: 0px;
+    width: 300px;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    padding: 5px;
+  }
+}

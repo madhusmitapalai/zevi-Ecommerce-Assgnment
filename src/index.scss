@@ -1,0 +1,135 @@
+/* import fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@100;300;400;500;600;700;900&display=swap");
+
+/* general styles */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+img {
+  width: 100%;
+  display: block;
+}
+
+body {
+  font-family: "DIN Neuzeit Grotesk", sans-serif;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: #fff !important;
+}
+
+.ant-input-search .ant-input:hover,
+.ant-input-search .ant-input:focus {
+  border-radius: 5px 0 0 5px;
+}
+.ant-input-search > .ant-input-group > .ant-input-group-addon:last-child {
+  border-radius: 0 5px 5px 0;
+}
+.ant-select-show-search.ant-select:not(.ant-select-customize-input)
+  .ant-select-selector {
+  cursor: text;
+  width: 100%;
+  height: auto;
+  padding: 5px 11px;
+  border-radius: 5px;
+  margin: 0 0 0 0;
+}
+// .ant-select {
+//   margin-right: 15px !important;
+// }
+.ant-picker-input > input {
+  padding: 5px;
+}
+
+.ant-input-search
+  > .ant-input-group
+  > .ant-input-group-addon:last-child
+  .ant-input-search-button:not(.ant-btn-primary) {
+  &:hover {
+    background: none;
+  }
+}
+.ant-select-selector {
+  min-width: 75px;
+}
+.ant-card-body {
+  padding: 0px;
+}
+.anticon-star {
+  font-size: 16px;
+  color: #fdd33d;
+}
+.but-btn {
+  background-color: rgb(254, 111, 22);
+  color: #fff !important;
+  width: 300px;
+  height: 50px;
+  font-size: 25px;
+}
+.but-btn:hover {
+  background-color: rgb(195, 77, 4);
+  color: #fff !important;
+  width: 300px;
+  height: 50px;
+  font-size: 25px;
+}
+.whishlist-btn {
+  background-color: rgb(242, 242, 21);
+  color: #fff !important;
+  height: 50px;
+  width: 300px;
+  font-size: 25px;
+}
+.whishlist-btn:hover {
+  background-color: rgb(215, 215, 2);
+  color: #fff !important;
+  height: 50px;
+  width: 300px;
+  font-size: 25px;
+}
+.search-button {
+  background-color: rgb(40, 0, 140);
+  color: #fff;
+}
+@media only screen and (max-width: 400px) {
+  .but-btn {
+    background-color: rgb(254, 111, 22);
+    color: hsl(0, 0%, 100%) !important;
+    width: 100px;
+    height: 50px;
+    font-size: 15px;
+  }
+  .but-btn:hover {
+    background-color: rgb(195, 77, 4);
+    color: #fff !important;
+  }
+  .whishlist-btn {
+    background-color: rgb(242, 242, 21);
+    color: #fff !important;
+    height: 50px;
+    width: 100px;
+    font-size: 15px;
+  }
+  .whishlist-btn:hover {
+    background-color: rgb(215, 215, 2);
+    color: #fff !important;
+  }
+}

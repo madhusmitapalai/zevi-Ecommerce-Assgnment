@@ -1,0 +1,218 @@
+.product-container {
+  display: flex;
+  padding: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .card-img {
+    max-width: 150px;
+    max-height: 200px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+  }
+
+  .ant-card-cover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .ant-card {
+    width: 220px;
+    height: 250px;
+    position: relative;
+    top: 0;
+  }
+  .row-spacing {
+    margin-bottom: 10px;
+  }
+  .card-text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8px 0px;
+  }
+  .ant-card-body {
+    padding: 0px;
+  }
+  .card-text-1 {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .cards {
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 240px;
+    border-radius: 5px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &:hover .view-product {
+      display: block;
+      transform: translateY(0);
+    }
+  }
+  .heart-icon {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    color: red;
+    font-size: 17px;
+  }
+  h3 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .name {
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .rating {
+    color: grey;
+    font-size: 11px;
+  }
+  .price {
+    font-size: 20px;
+    font-weight: 700;
+    display: block;
+    padding: 5px;
+  }
+  .view-product {
+    width: 100%;
+    background-color: #6d84ff;
+    color: #fff;
+    opacity: 0.6;
+    height: 40px;
+    padding-top: 10px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    align-items: center;
+    display: none;
+    transform: translateY(100%);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out,
+      background-color 0.3s ease-out;
+  }
+
+  .loading-spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+  }
+  .filter-container {
+    .brands-container {
+      padding: 15px;
+      width: 250px;
+    }
+    h4 {
+      margin: 10px 0;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    h3 {
+      font-size: 25px;
+      font-weight: 700;
+      margin-bottom: 0px;
+      text-align: center;
+    }
+  }
+  .radios {
+    display: block;
+  }
+  .empty-card {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+  }
+  .spin {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+  }
+}
+.filter-icon {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 400px) {
+  .product-container {
+    width: 100%;
+    height: 100%;
+    .empty-card {
+      position: absolute;
+      top: 40%;
+      left: 40%;
+    }
+    .spin {
+      position: absolute;
+      top: 40%;
+      left: 40%;
+    }
+    .grig-card {
+      width: 300px;
+    }
+    .cards {
+      background: #fff;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      width: 240;
+      border-radius: 5px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &:hover .view-product {
+        display: block;
+        transform: translateY(0);
+      }
+    }
+  }
+  .filter-container {
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 20px;
+    background-color: #fff;
+    z-index: 1;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .filter-container.active {
+    display: block; /* Show when active (toggled) */
+  }
+
+  .filter-icon {
+    display: block; /* Show on smaller screens */
+    cursor: pointer;
+  }
+  .anticon-filter {
+    font-size: 30px;
+    padding: 0px 5px;
+  }
+
+  .flex-container {
+    width: 100%;
+    /* Full width on smaller screens */
+  }
+}
