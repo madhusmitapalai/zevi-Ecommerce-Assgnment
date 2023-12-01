@@ -106,10 +106,10 @@ const Products = () => {
               Below 500
             </Radio>
             <Radio className="radios" value="price2">
-              Below 1000
+              Between 500 - 1000
             </Radio>
             <Radio className="radios" value="price3">
-              Below 2000
+              Between 1000 - 2000
             </Radio>
           </Radio.Group>
           <h4>Ratings</h4>
